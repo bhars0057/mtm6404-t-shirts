@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="./styles.css">
   <title>T-Shirts</title>
 </head>
 <body>
-  
-  
+  <div id="root"></div>
+  <script type="text/babel" src="t-shirts.js">
+    const App = () => {
+      return (
+        <div>
+          <h1>T-Shirts Store</h1>
+          <p>Buy your favorite T-Shirts</p>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
 </body>
 </html>
+
